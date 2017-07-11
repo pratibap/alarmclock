@@ -1,0 +1,105 @@
+body {
+	font-family: monospace;
+	text-align: center;
+}
+
+button, input {
+	outline: none;
+}
+
+button {
+	background: white;
+	border: 1px solid black;
+	letter-spacing: .15em;
+}
+
+button:hover {
+	background: #eee;
+}
+
+label {
+	letter-spacing: .15em;
+}
+
+input {
+	text-align: center;
+}
+
+.row > .col, button, input {
+	border-radius: 30%;
+}
+
+#currenttime {
+	background: black;
+	color: #00ff00;
+	font-size: 10em;
+	margin: .05em 0 .15em;
+}
+
+#alarmbutton {
+	font-size: 2em;
+	padding: .5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#alarmform {
+	display: none;
+	border: 1px solid black;
+	padding: 1em .5em;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px; 
+    background: black;
+}
+
+#alarmform label, #alarmform input {
+	margin-bottom: .5em;
+    font-size: 2em;
+}
+
+#alarmform label {
+	color: white;
+	display: block;
+}
+
+#alarmform button {
+	width: 65px;
+}
+
+#alarminput {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#alarmon {
+	display: none;
+	margin-top: -.5em;
+}
+
+#alarmtime {
+	color: red;
+	font-size: 2em;
+}
+
+#alarmclose {
+	color: white;
+	float: right;
+	margin-right: 1em;
+}
+
+#alarmclose:hover {
+	color: white;
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	#currenttime {
+		font-size: 8em;
+	}
+	#alarmform {
+		width: 100%;
+	}
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alarm Clock</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/alarmclock.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/alarmclock.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col" id="currenttime"></div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button id="alarmbutton" onclick="showAlarm()">Alarm</button>
+      <div id="alarmform">
+        
+        <a id="alarmclose" href="#" onclick="closeAlarm()">x</a>
+        <br />
+        <label>Alarm</label>
+        <audio id="alarmaudio" src="audio/rooster.mp3" autostart="false" ></audio>
+
+        <form id="alarmoff" onsubmit="setAlarm();return false;">
+          <input id="alarminput" name="alarminput" type="time" required="required" />
+          <button>Set</button>
+        </form>
+
+        <div id="alarmon">
+          <p id="alarmtime"></p>
+          <button onclick="clearAlarm();return false;">Clear</button>
+        </div>
+      </div> 
+
+    </div>
+  </div>
+</div> 
+</body>
+</html>
